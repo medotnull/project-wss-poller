@@ -1,0 +1,26 @@
+{
+  "name": "wss-poller",
+  "version": "1.0.0",
+  "description": "src/index.ts → app entry point, Redis connect + WS start.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "sub": "tsx scripts/subscriber.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "decimal.js": "^10.6.0",
+    "dotenv": "^17.4.2",
+    "redis": "^5.12.1",
+    "ws": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
